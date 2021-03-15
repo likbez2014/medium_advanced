@@ -28,9 +28,15 @@
             ?>
         " method = "POST">
         <div class="nav">
-            <input type="hidden" name="win" value="<?php echo(json_encode ($win));?>">
+            <input type="hidden" name="win" value="<?php echo(json_encode($win));?>">
             <?php
-                /*echo($komp);*/
+                echo($komp);
+                echo("<p>" .$win[0]. "</p>");
+                echo("<p>" .$win[1]. "</p>");
+                echo("<p>" .$win[2]. "</p>");
+                echo("<p>" .$win[3]. "</p>");
+                echo("<p>" .$win[4]. "</p>");
+                
                 /*echo("<p> Мій вибір " .$win[4]. "</p>");*/
                 if($komp == $win[4]) {
                     echo("<h2>Число вгадано, ти молодець</h2>");

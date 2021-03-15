@@ -26,7 +26,10 @@
         ?>" method="POST">
             <div class="nav">
                 <?php
-                    /*echo($komp);*/
+                    echo($komp);
+                    echo("<p>" .$win[0]. "</p>");
+                    echo("<p>" .$win[1]. "</p>");
+                    echo("<p>" .$win[2]. "</p>");
                     /*echo("<p> Мій вибір " .$win[2]. "</p>");*/
                     if($win[0] == 1 && $komp == $win[2]) {
                         echo("<h2>ВАНГА ВАМ БИ ЗАЗДРИЛА</h2>");
@@ -45,7 +48,7 @@
                     ?>
             </div>
             <?php
-                echo("<input type='hidden' name='win' value='" .json_encode ($win). "'>");
+                echo("<input type='hidden' name='win' value='" .json_encode($win). "'>");
                 if($komp == $win[2]) {
                     echo("<input type='submit' value='Зіграйте ще раз'>");
                 } else {

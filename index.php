@@ -39,7 +39,7 @@
                         }
                     ?>
                 </select>
-                <input type="hidden" name="win" value="<?php echo(json_encode ($win));?>">
+                <input type="hidden" name="win" value="<?php echo(json_encode($win));?>">
                 <input type="hidden" name="komp" value="<?php echo($komp);?>"><!--data transmission on the number of the generator-->
                 <input type="hidden" name="numbers" value="<?php echo($numbers);?>"><!--data transmission on the number jf numbers in the list -->
                 <p>

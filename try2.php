@@ -24,7 +24,8 @@
                     $win                = json_decode($_POST["win"]);
                     $kompStartRange;
                     $kompEndRange;
-                    /*echo($komp);*/
+                    echo($komp);
+                    
                     /*echo("<p> Мій вибір " .$myStartRange. "..." .$myEndRange. "</p>");*/
                     
                     for($i = $numbers - 9; $i>0; $i -= 10) {
@@ -38,13 +39,13 @@
                         echo("
                             <p>Да ти чарівник</p>
                         ");
-                        $win [0] = 1;
-                        $win [1]++;
+                        $win[0] = 1;
+                        $win[1]++;
                     } else {
                         echo("
                             <p>Нажаль</p>
                         ");
-                        $win [0] = 0;
+                        $win[0] = 0;
                     }
                     echo ("
                         <p>Загадане число знаходиться в діапазоні " . $kompStartRange . "..." . $kompEndRange . "</p>
@@ -63,7 +64,7 @@
                     ?>
                 </select>
                     <input type="hidden" name="komp" value="<?php echo($komp);?>">
-                    <input type="hidden" name="win" value="<?php echo(json_encode ($win));?>">
+                    <input type="hidden" name="win" value="<?php echo(json_encode($win));?>">
                     <input type="hidden" name="kompStartRange" value="<?php echo($kompStartRange);?>">
                     <input type="submit" value="Я впевнений, сьогодні мій день">
             </div>

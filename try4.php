@@ -27,16 +27,20 @@
                 }
             ?>" method = "POST">
             <div class="nav">
-                <input type="hidden" name="win" value="<?php echo(json_encode ($win));?>">
+                <input type="hidden" name="win" value="<?php echo(json_encode($win));?>">
                 <?php
-                    /*echo($komp);*/
-                    /*echo("<p> Мій вибір " .$win[3]. "</p>");*/
+                    echo($komp);
+                    echo("<p>" .$win[0]. "</p>");
+                    echo("<p>" .$win[1]. "</p>");
+                    echo("<p>" .$win[2]. "</p>");
+                    echo("<p>" .$win[3]. "</p>");
+                    // echo("<p> Мій вибір " .$win[3]. "</p>");
                     if($komp == $win[3]) {
                         echo("<h2>Число вгадано, ти молодець</h2>");
                         echo("<input type='submit' value='Зіграйте ще раз'>");
                         echo("</div>");
                     } else {
-                        if ($komp > $win[3]) {
+                        if ($komp >= $win[3]) {
                             echo("<p> Загадане число більше " .$win[3]. "</p>");
                         } else {
                             echo("<p> Загадане число менше " .$win[3]. "</p>");
